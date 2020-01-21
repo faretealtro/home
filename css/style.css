@@ -1,0 +1,50 @@
+body{
+	padding-bottom: 0;
+	padding-top: 4.5rem;
+	margin: 0;
+}
+
+footer{
+	background-color: #dc3545!important;
+	text-align: center;
+	color: white;
+}
+
+footer p a{
+	color: white;
+}
+
+.contenitore {
+	padding: 0.5rem;
+}
+
+.contenitore > img {
+	display: none;		
+}
+
+h1, h2, nav div ul li {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #dc3545;
+}
+
+section p, section ul li {
+	font-family: 'Gelasio', serif;
+}
+
+@media screen and (min-width: 576px)
+{
+	.contenitore {
+		display: flex;
+		padding: 1rem 2rem;
+	}
+
+	.contenitore > div {
+		max-width: 40rem;
+	}
+
+	.contenitore > img {
+		display: block;
+		align-self: center;
+		padding: 2rem;
+	}
+}
