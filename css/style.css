@@ -5,16 +5,23 @@ body{
 }
 
 footer{
-	background-color: #dc3545!important;
+	background-color: #dc3545;
 	text-align: center;
 	color: white;
+	padding: 0.5rem;
 }
 
-footer p a{
+footer a{
 	color: white;
+	margin: 0 1rem;
+	font-size: 1.5rem;
 }
 
-.contenitore {
+
+.contenitore div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 0.5rem;
 }
 
@@ -22,29 +29,80 @@ footer p a{
 	display: none;		
 }
 
+.contenitore h1, .contenitore h2 {
+	border-bottom: 2px solid #dc3545;
+	width: 25rem;
+	text-align: center;
+}
+
 h1, h2, nav div ul li {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #dc3545;
 }
 
 section p, section ul li {
-	font-family: 'Gelasio', serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
-@media screen and (min-width: 576px)
-{
+section {
+ line-height: 1.5em;
+}
+
+
+.titolo-corsi {
+	width: 15rem;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 2rem;
+	border-bottom: 2px solid #3b3b3b;
+	color: #3b3b3b;
+
+}
+
+#corsi-attivi, #corsi-passati {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.vetrina {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fafafa;
+	height: 40rem;
+	width: 20rem;
+	margin: 1rem;
+}
+
+#corsi-attivi .vetrina {
+	height: 25rem;
+}
+
+.vetrina img {
+	width: 20rem;
+}
+
+.vetrina p {
+	padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.vetrina h5 {
+	margin: 0 auto;
+	margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 756px) {
 	.contenitore {
+		width: 100%;
+		justify-content: center;
 		display: flex;
-		padding: 1rem 2rem;
 	}
 
 	.contenitore > div {
-		max-width: 40rem;
-	}
-
-	.contenitore > img {
-		display: block;
-		align-self: center;
-		padding: 2rem;
+		max-width: 50rem;
+		background-color: #fafafa;
+		padding: 1rem 2rem;
 	}
 }
+
