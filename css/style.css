@@ -41,7 +41,7 @@ h1, h2, h3 {
 
 }
 
-nav div ul li {
+nav a {
 	font-family: 'Noto Sans', sans-serif;
 	color: #dc3545;
 }
@@ -50,10 +50,15 @@ section p, section ul li {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-section {
- line-height: 1.5em;
-}
 
+section {
+ line-height: 1.5rem;
+ font-size: 1rem;
+
+}
+.current, a.nav-link:hover {
+	border-bottom: 2px solid #dc3545;
+}
 
 .titolo-corsi {
 	width: 15rem;
@@ -65,10 +70,20 @@ section {
 
 }
 
-#corsi-attivi, #corsi-passati {
+#corsi-attivi, #corsi-passati, #spettacoli{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+}
+
+#spettacoli{
+	min-height: 78vh;
+
+}
+
+.descrizione-lab {
+	padding: 1.2rem;
+	font-size: 1.2rem;
 }
 
 .vetrina {
@@ -98,17 +113,44 @@ section {
 	margin-top: 0.5rem;
 }
 
+@media screen and (max-width: 756px) {
+	.allestimento-d {
+		display: none;
+	}
+
+	.allestimento-c {
+		max-width: 100%;
+
+	}
+}
+
 @media screen and (min-width: 756px) {
 	.contenitore {
 		width: 100%;
 		justify-content: center;
 		display: flex;
-	}
+		}
 
 	.contenitore > div {
 		max-width: 50rem;
 		background-color: #fafafa;
 		padding: 1rem 2rem;
 	}
+
+	.contenitore h4 {
+		font-size: 1.7rem;
+		line-height: 2.125rem;
+		width: 25rem;
+	}	
+
+	.allestimento-c {
+		display: none;
+					}
+	.allestimento-d {
+		max-width: 100%;
+
+	}
 }
+
+.flex {max-width: 100%}
 
