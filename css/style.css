@@ -35,27 +35,30 @@ footer a{
 	text-align: center;
 }
 
-h1, h2, h3 {
-	font-family: 'Noto Sans', sans-serif;
+h1, h2, h3, h4 {
 	color: #3b3b3b;
-
+	margin: 1.5rem 0;
 }
 
+
 nav a {
-	font-family: 'Noto Sans', sans-serif;
 	color: #dc3545;
 }
 
-section p, section ul li {
-	font-family: 'Source Sans Pro', sans-serif;
+p, section, footer {
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, nav, a {
+	font-family: 'Montserrat', sans-serif;
 }
 
 
 section {
- line-height: 1.5rem;
- font-size: 1rem;
-
+ line-height: 1.6em;
+ font-size: 1.13rem;
 }
+
 .current, a.nav-link:hover {
 	border-bottom: 2px solid #dc3545;
 }
@@ -90,11 +93,16 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #fafafa;
-	height: 38rem;
+	background-color: #f5f5f5;
+	height: 40rem;
 	width: 20rem;
 	margin: 1rem;
 }
+
+.dimensione {
+	height: 44rem;
+}
+
 
 #corsi-attivi .vetrina {
 	height: 25rem;
@@ -113,7 +121,7 @@ section {
 	margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 756px) {
+/*@media screen and (max-width: 756px) {
 	.allestimento-d {
 		display: none;
 	}
@@ -122,7 +130,17 @@ section {
 		max-width: 100%;
 
 	}
+} */
+
+.allestimento-d {
+		display: none;
+	}
+
+	.allestimento-c {
+		max-width: 100%;
+		display: block;
 }
+
 
 @media screen and (min-width: 756px) {
 	.contenitore {
@@ -148,6 +166,7 @@ section {
 					}
 	.allestimento-d {
 		max-width: 100%;
+		display: block;
 
 	}
 }
