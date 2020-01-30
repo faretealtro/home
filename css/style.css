@@ -45,7 +45,7 @@ nav a {
 	color: #dc3545;
 }
 
-p, section, footer {
+p, section, footer, .descrizione-lab {
 	font-family: 'Lato', sans-serif;
 }
 
@@ -87,6 +87,12 @@ section {
 .descrizione-lab {
 	padding: 1.2rem;
 	font-size: 1.2rem;
+	text-align: center;
+}
+
+.descrizione-lab a, .descrizione-lab a:hover {
+	color: black;
+
 }
 
 .vetrina {
