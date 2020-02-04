@@ -17,16 +17,18 @@ footer a{
 	font-size: 1.5rem;
 }
 
-
-.contenitore div {
+.contenitore div, .cornice-rel div {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	padding: 0.5rem;
 }
 
-.contenitore > img {
-	display: none;		
+.contenitore div {
+	align-items: center;
+}
+
+.cornice-rel img{
+	width: 100%;
 }
 
 .contenitore h4{
@@ -45,7 +47,7 @@ nav a {
 	color: #dc3545;
 }
 
-p, section, footer, .descrizione-lab {
+p, section, footer, .descrizione-lab, .black {
 	font-family: 'Lato', sans-serif;
 }
 
@@ -53,6 +55,9 @@ h1, h2, h3, h4, h5, nav, a {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.black, .black:hover {
+	color: black;
+}
 
 section {
  line-height: 1.6em;
@@ -80,7 +85,7 @@ section {
 }
 
 #spettacoli{
-	min-height: 78vh;
+	min-height: 90vh;
 
 }
 
@@ -140,26 +145,61 @@ section {
 
 .allestimento-d {
 		display: none;
-	}
+}
 
-	.allestimento-c {
+.allestimento-c {
 		max-width: 100%;
 		display: block;
+}	
+
+.grandezza-imm {
+	max-width: 100%
 }
 
 
+
+.cornice-rel h2, .cornice-rel h1 {
+	text-align: center;
+}
+
+.cornice-rel h3 {
+	font-size: 1.5rem;
+}
+
+.cornice-rel p {
+	margin: 1rem 0;
+}
+
+.cornice-rel h1, .cornice-rel h2, .cornice-rel h3 {
+	margin-top: 2rem;
+}
+
 @media screen and (min-width: 756px) {
-	.contenitore {
+	.contenitore, .cornice-rel {
 		width: 100%;
 		justify-content: center;
 		display: flex;
 		}
+	.cornice-rel{
+	line-height: 1.6em;
+	font-size: 1.13rem;
+	}
+	.cornice-rel img {
+		width: unset;
+		align-self: center;
+		margin: 1rem 0;
+	}
 
-	.contenitore > div {
+	.contenitore div, .cornice-rel div {
 		max-width: 50rem;
 		background-color: #fafafa;
 		padding: 1rem 2rem;
 	}
+
+	.cornice-rel div {
+	
+	padding: 2rem 2rem;
+}
 
 	.contenitore h4 {
 		font-size: 1.7rem;
@@ -177,5 +217,4 @@ section {
 	}
 }
 
-.flex {max-width: 100%}
-
+	
