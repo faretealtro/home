@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, nav, a {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.black, .black:hover {
+.black, .black:hover, .black a, .black a:hover {
 	color: black;
 }
 
@@ -95,10 +95,7 @@ section {
 	text-align: center;
 }
 
-.descrizione-lab a, .descrizione-lab a:hover {
-	color: black;
 
-}
 
 .vetrina {
 	display: flex;
@@ -131,17 +128,6 @@ section {
 	margin: 0 auto;
 	margin-top: 0.5rem;
 }
-
-/*@media screen and (max-width: 756px) {
-	.allestimento-d {
-		display: none;
-	}
-
-	.allestimento-c {
-		max-width: 100%;
-
-	}
-} */
 
 .allestimento-d {
 		display: none;
